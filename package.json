@@ -1,0 +1,51 @@
+{
+  "name": "@crepidoma/wxt-sized-icons",
+  "description": "WXT module for generating extension icons, with a different source image per size.",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "author": "yabpaseri",
+  "keywords": [
+    "wxt",
+    "wxt-module",
+    "module",
+    "icons",
+    "manifest"
+  ],
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "vitest run",
+    "publint": "publint",
+    "prepack": "tsdown"
+  },
+  "peerDependencies": {
+    "wxt": ">=0.19.0"
+  },
+  "dependencies": {
+    "defu": "^6.1.4",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.16",
+    "@types/node": "^24.0.0",
+    "publint": "^0.3.21",
+    "tsdown": "^0.22.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.8",
+    "wxt": "^0.20.26"
+  }
+}
