@@ -5,6 +5,12 @@
   "type": "module",
   "license": "MIT",
   "author": "yabpaseri",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crepidoma/wxt-sized-icons.git"
+  },
+  "packageManager": "pnpm@11.5.2",
+  "sideEffects": false,
   "keywords": [
     "wxt",
     "wxt-module",
