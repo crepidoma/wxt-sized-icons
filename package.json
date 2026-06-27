@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "defu": "^6.1.4",
-    "sharp": "^0.34.5"
+    "sharp": "^0.35.2"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.16",

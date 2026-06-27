@@ -1,7 +1,7 @@
 import { access, mkdir } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
 import defu from 'defu';
-import sharp from 'sharp';
+import sharp, { type Sharp } from 'sharp';
 import 'wxt';
 import { defineWxtModule } from 'wxt/modules';
 
@@ -100,7 +100,7 @@ async function exists(path: string): Promise<boolean> {
 }
 
 /** Resize the source image and return a sharp instance with the development indicator (grayscale / overlay) applied. */
-async function renderIcon(sourcePath: string, size: number, indicator: DevelopmentIndicator, mode: string): Promise<sharp.Sharp> {
+async function renderIcon(sourcePath: string, size: number, indicator: DevelopmentIndicator, mode: string): Promise<Sharp> {
   const image = sharp(sourcePath).resize(size).png();
   if (mode !== 'development' || indicator === false) {
     return image;
