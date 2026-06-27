@@ -1,7 +1,7 @@
 {
   "name": "@crepidoma/wxt-sized-icons",
   "description": "WXT module for generating extension icons, with a different source image per size.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "license": "MIT",
   "author": "yabpaseri",
